@@ -1,0 +1,34 @@
+{
+  "name": "mobile",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "eas-build-pre-install": "cd ../.. && npm install",
+    "eas-build-post-install": "cd ../.. && npm run build"
+  },
+  "dependencies": {
+    "@repo/api": "*",
+    "@repo/ui": "*",
+    "@tanstack/react-query": "^5.24.1",
+    "@trpc/client": "^11.0.0-next-beta.294",
+    "@trpc/react-query": "^11.0.0-next-beta.294",
+    "expo": "~50.0.7",
+    "expo-status-bar": "~1.11.1",
+    "expo-auth-session": "~5.4.0",
+    "expo-random": "~13.6.0",
+    "expo-web-browser": "~12.8.2",
+    "react": "18.2.0",
+    "react-native": "0.73.4",
+    "superjson": "^2.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@repo/typescript-config": "*",
+    "@types/react": "~18.2.45",
+    "typescript": "^5.1.3"
+  }
+}
